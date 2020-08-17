@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+<<<<<<< HEAD
 		881C2AC324E806E7007DFE52 /* PDFPreviewScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C2AC224E806E7007DFE52 /* PDFPreviewScreen.swift */; };
 		881C2AC524E809DF007DFE52 /* PDFCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 881C2AC424E809DF007DFE52 /* PDFCreator.swift */; };
 		881C2AD224E8143E007DFE52 /* airNotFoundNew.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 881C2ACE24E8143D007DFE52 /* airNotFoundNew.pdf */; };
@@ -19,6 +20,8 @@
 		FA1483FA24DECA41002C063B /* SettingsDeviceType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1483F924DECA41002C063B /* SettingsDeviceType.swift */; };
 		FA218F6324DF7DCF00B52B1C /* SettingsMeasureType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA218F6224DF7DCF00B52B1C /* SettingsMeasureType.swift */; };
 		FA43F18D24D2E1AE00936C9F /* SettingsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43F18C24D2E1AE00936C9F /* SettingsScreen.swift */; };
+=======
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 		FA7533C624CEE6B9007571FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7533C524CEE6B9007571FA /* AppDelegate.swift */; };
 		FA7533C824CEE6B9007571FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7533C724CEE6B9007571FA /* SceneDelegate.swift */; };
 		FA7533CA24CEE6B9007571FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7533C924CEE6B9007571FA /* ViewController.swift */; };
@@ -26,6 +29,7 @@
 		FA7533CF24CEE6BE007571FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA7533CE24CEE6BE007571FA /* Assets.xcassets */; };
 		FA7533D224CEE6BE007571FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA7533D024CEE6BE007571FA /* LaunchScreen.storyboard */; };
 		FA7533DA24CEE781007571FA /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7533D924CEE781007571FA /* MainScreen.swift */; };
+<<<<<<< HEAD
 		FABE0A0924E405A900050941 /* JsonParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE0A0824E405A900050941 /* JsonParser.swift */; };
 		FABE0A0D24E4193700050941 /* InfoFunctionsScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = FABE0A0C24E4193700050941 /* InfoFunctionsScreen.swift */; };
 		FAC0E8C124D6BC57004722C9 /* Calculations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC0E8C024D6BC57004722C9 /* Calculations.swift */; };
@@ -46,6 +50,11 @@
 		FA1483F924DECA41002C063B /* SettingsDeviceType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsDeviceType.swift; sourceTree = "<group>"; };
 		FA218F6224DF7DCF00B52B1C /* SettingsMeasureType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsMeasureType.swift; sourceTree = "<group>"; };
 		FA43F18C24D2E1AE00936C9F /* SettingsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsScreen.swift; sourceTree = "<group>"; };
+=======
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 		FA7533C224CEE6B9007571FA /* BrandMaster20.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BrandMaster20.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7533C524CEE6B9007571FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA7533C724CEE6B9007571FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -55,11 +64,14 @@
 		FA7533D124CEE6BE007571FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FA7533D324CEE6BE007571FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA7533D924CEE781007571FA /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		FABE0A0824E405A900050941 /* JsonParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonParser.swift; sourceTree = "<group>"; };
 		FABE0A0C24E4193700050941 /* InfoFunctionsScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InfoFunctionsScreen.swift; path = BrandMaster20/Controller/InfoFunctionsScreen.swift; sourceTree = SOURCE_ROOT; };
 		FAC0E8C024D6BC57004722C9 /* Calculations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Calculations.swift; sourceTree = "<group>"; };
 		FAC0E8C224D6BDFE004722C9 /* Parameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Parameters.swift; sourceTree = "<group>"; };
 		FAFABA6524DEA52A00A3D490 /* InfoScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreen.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +85,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+<<<<<<< HEAD
 		881C2AD624E81446007DFE52 /* PDFPatterns */ = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,8 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 		FA7533B924CEE6B9007571FA = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +146,7 @@
 				FA7533C524CEE6B9007571FA /* AppDelegate.swift */,
 				FA7533C724CEE6B9007571FA /* SceneDelegate.swift */,
 				FA7533C924CEE6B9007571FA /* ViewController.swift */,
+<<<<<<< HEAD
 				FA7533CE24CEE6BE007571FA /* Assets.xcassets */,
 				FA7533D324CEE6BE007571FA /* Info.plist */,
 				8829620524E6178600FA03B7 /* infoData.json */,
@@ -138,10 +154,18 @@
 				FAC0E8BF24D6BC19004722C9 /* Model */,
 				FA43F18E24D2E1B700936C9F /* View */,
 				FA0FCF6024DA49D90055EDC1 /* Controller */,
+=======
+				FA7533CB24CEE6B9007571FA /* Main.storyboard */,
+				FA7533CE24CEE6BE007571FA /* Assets.xcassets */,
+				FA7533D024CEE6BE007571FA /* LaunchScreen.storyboard */,
+				FA7533D324CEE6BE007571FA /* Info.plist */,
+				FA7533D924CEE781007571FA /* MainScreen.swift */,
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 			);
 			path = BrandMaster20;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 		FAC0E8BF24D6BC19004722C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,6 +177,8 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -211,6 +237,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				881C2AD524E8143E007DFE52 /* signal.pdf in Resources */,
 				FA7533D224CEE6BE007571FA /* LaunchScreen.storyboard in Resources */,
 				881C2AD324E8143E007DFE52 /* Marks.pdf in Resources */,
@@ -219,6 +246,11 @@
 				881C2AD424E8143E007DFE52 /* airFoundNew.pdf in Resources */,
 				FA7533CD24CEE6B9007571FA /* Main.storyboard in Resources */,
 				8829620624E6178600FA03B7 /* infoData.json in Resources */,
+=======
+				FA7533D224CEE6BE007571FA /* LaunchScreen.storyboard in Resources */,
+				FA7533CF24CEE6BE007571FA /* Assets.xcassets in Resources */,
+				FA7533CD24CEE6B9007571FA /* Main.storyboard in Resources */,
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				FA1483FA24DECA41002C063B /* SettingsDeviceType.swift in Sources */,
 				881C2AC324E806E7007DFE52 /* PDFPreviewScreen.swift in Sources */,
 				FA7533DA24CEE781007571FA /* MainScreen.swift in Sources */,
@@ -245,6 +278,12 @@
 				FABE0A0D24E4193700050941 /* InfoFunctionsScreen.swift in Sources */,
 				FABE0A0924E405A900050941 /* JsonParser.swift in Sources */,
 				FAFABA6624DEA52A00A3D490 /* InfoScreen.swift in Sources */,
+=======
+				FA7533DA24CEE781007571FA /* MainScreen.swift in Sources */,
+				FA7533CA24CEE6B9007571FA /* ViewController.swift in Sources */,
+				FA7533C624CEE6B9007571FA /* AppDelegate.swift in Sources */,
+				FA7533C824CEE6B9007571FA /* SceneDelegate.swift in Sources */,
+>>>>>>> 487eb97d8ec40c36c31434b8ab2f54f14ef4de76
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
