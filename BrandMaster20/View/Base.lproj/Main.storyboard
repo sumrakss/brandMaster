@@ -260,7 +260,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="30w-G3-hWA">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="30w-G3-hWA">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="mI3-Wy-k44"/>
@@ -289,7 +289,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Toc-ln-xyM">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Toc-ln-xyM">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="5GO-Ta-STK"/>
@@ -318,7 +318,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="IyN-km-1Rm">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="IyN-km-1Rm">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="s62-1V-PfN"/>
@@ -347,7 +347,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-Ip-MWC">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-Ip-MWC">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="72" id="4mu-1l-DsA"/>
@@ -376,7 +376,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="91r-PM-TNm">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="91r-PM-TNm">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="72" id="asf-nN-wdV"/>
@@ -426,7 +426,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Звено" id="eDH-r8-7ix">
-                        <barButtonItem key="rightBarButtonItem" title="Рассчитать" id="lKQ-ZP-XMZ"/>
+                        <barButtonItem key="rightBarButtonItem" title="Рассчитать" id="lKQ-ZP-XMZ">
+                            <connections>
+                                <action selector="calculate:" destination="oi7-xr-2VS" id="JLG-ir-6w0"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <size key="freeformSize" width="414" height="1400"/>
                     <connections>
@@ -455,6 +459,7 @@
                         <outletCollection property="fireDataTextFields" destination="IyN-km-1Rm" collectionClass="NSMutableArray" id="fWE-FX-MHa"/>
                         <outletCollection property="fireDataTextFields" destination="MWr-Ip-MWC" collectionClass="NSMutableArray" id="2Xh-D6-UWR"/>
                         <outletCollection property="fireDataTextFields" destination="91r-PM-TNm" collectionClass="NSMutableArray" id="X3E-tp-dba"/>
+                        <segue destination="UOU-gm-nDR" kind="show" identifier="toPDF" id="KEv-r0-vlo"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NBd-fa-soG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1506,7 +1511,7 @@
         <!--СИЗОД-->
         <scene sceneID="41J-3e-YKx">
             <objects>
-                <tableViewController id="zdi-sQ-nCZ" sceneMemberID="viewController">
+                <tableViewController id="zdi-sQ-nCZ" customClass="InfoServiceScreen" customModule="BrandMaster20" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="QW8-f1-2al">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1592,7 +1597,7 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="СИЗОД" id="51e-xu-Z6n"/>
                     <connections>
-                        <segue destination="0dS-V5-ZAK" kind="show" id="ksu-1W-fBR"/>
+                        <segue destination="0dS-V5-ZAK" kind="show" identifier="serviceToDiplay" id="ksu-1W-fBR"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A09-mY-7Sr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1725,7 +1730,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="18"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
@@ -1750,7 +1755,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="fontSizeStepper" destination="LD1-Uj-i5h" id="pko-b1-7Da"/>
+                        <outlet property="fontSizeStepper" destination="dEY-Gx-vpk" id="maP-eW-x2w"/>
                         <outlet property="mainTextView" destination="bha-yA-DtP" id="6OD-un-827"/>
                     </connections>
                 </viewController>
@@ -1834,6 +1839,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yF2-aP-EvS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2880" y="-52"/>
+        </scene>
+        <!--Preview Screen-->
+        <scene sceneID="prH-Ew-fR8">
+            <objects>
+                <viewController id="UOU-gm-nDR" customClass="PDFPreviewScreen" customModule="BrandMaster20" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4CY-jq-5lw">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Lrv-Nq-NfQ" customClass="PDFView">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Lrv-Nq-NfQ" firstAttribute="leading" secondItem="DMc-Ic-rRh" secondAttribute="leading" id="NPj-UW-sd0"/>
+                            <constraint firstItem="DMc-Ic-rRh" firstAttribute="trailing" secondItem="Lrv-Nq-NfQ" secondAttribute="trailing" id="Osc-Wp-aHz"/>
+                            <constraint firstItem="Lrv-Nq-NfQ" firstAttribute="top" secondItem="DMc-Ic-rRh" secondAttribute="top" id="ZGm-ao-6Ke"/>
+                            <constraint firstItem="DMc-Ic-rRh" firstAttribute="bottom" secondItem="Lrv-Nq-NfQ" secondAttribute="bottom" id="t1m-tx-t6s"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="DMc-Ic-rRh"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bau-yo-lpM">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="vkH-1p-rPJ">
+                            <connections>
+                                <action selector="shareAction:" destination="UOU-gm-nDR" id="sUW-aT-Svi"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="pdfView" destination="Lrv-Nq-NfQ" id="Z9N-Rk-15K"/>
+                        <outlet property="shareButton" destination="vkH-1p-rPJ" id="S3p-hb-7Ir"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ikx-wx-hJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1136" y="910"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

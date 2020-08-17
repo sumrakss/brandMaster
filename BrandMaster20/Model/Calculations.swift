@@ -8,6 +8,7 @@ class Calculations {
 	private var vCylinder = Parameters.shared.airVolume
 	private var airFlow = Parameters.shared.airFlow
 	
+	
 	// MARK: - Функции расчетов параметров работы, если очаг найден.
 	
 	// 1) Расчет общего времени работы (Тобщ)
@@ -69,4 +70,5 @@ class Calculations {
 		let pressure = (maxDrop * vCylinder) / airFlow
 		return pressure
 	}
+	
 }

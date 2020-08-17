@@ -70,6 +70,8 @@ struct Parameters {
     // Давление срабатывания звукового сигнала
     var airSignal = 55.0
     
+    var airSignalFlag = false
+    
     var airFlow: Double {
         get {
             switch deviceType {
@@ -109,9 +111,13 @@ struct Parameters {
 	func setPressureData(for enterArray: [Double], for fireArray: [Double]) {
 		Parameters.shared.enterPressureData.removeAll()
 		Parameters.shared.firePressureData.removeAll()
+		Parameters.shared.fallPressureData.removeAll()
 		
 		Parameters.shared.enterPressureData = enterArray
 		Parameters.shared.firePressureData = fireArray
+		for item in 0..<enterArray.count {
+			Parameters.shared.fallPressureData.append(Parameters.shared.enterPressureData[item] - Parameters.shared.firePressureData[item])
+		}
 	}
     
 	

@@ -21,15 +21,24 @@ class InfoDisplayText: UIViewController {
 		}
 	}
 
+    
 	// MARK: - Global Properties
 	var mainText = ""
 	
+    
 	// MARK: - Lifecycle
 	
 	override func viewDidLoad() {
-		super.viewDidLoad()
-	}
-	
+        super.viewDidLoad()
+        setupInfoDisplayText ()
+    }
+    
+    
+     // MARK: - Private Methods
+    
+    private func setupInfoDisplayText () {
+        mainTextView.text? = mainText
+    }
 	
 	// MARK: - IBActions
 	
@@ -41,6 +50,5 @@ class InfoDisplayText: UIViewController {
 		
 //		SettingsData.settings.saveSettings()
 	}
-	
 	
 }

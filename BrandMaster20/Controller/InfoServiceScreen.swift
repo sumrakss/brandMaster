@@ -8,7 +8,7 @@
 
 import UIKit
 
-class InfoFunctionsScreen: UITableViewController {
+class InfoServiceScreen: UITableViewController {
     
     let json = parse(pathForFile: Bundle.main.path(forResource: "infoData", ofType: "json")!)
     
@@ -22,25 +22,22 @@ class InfoFunctionsScreen: UITableViewController {
     // MARK: - Table view data source
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        performSegue(withIdentifier: "functionsToDiplay", sender: self)
+        performSegue(withIdentifier: "serviceToDiplay", sender: self)
     }
     
     
 	// MARK: - Segue
 	
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "functionsToDiplay" {
+        if segue.identifier == "serviceToDiplay" {
             guard let vc = segue.destination as? InfoDisplayText else { return }
             let row = tableView.indexPathForSelectedRow!.row
             let section = tableView.indexPathForSelectedRow!.section
             
             switch section {
             case 0:
-				vc.mainText = json![0].service[row]
-            case 1:
-                vc.mainText = json![0].functionals[row]
-            case 2:
-                vc.mainText = json![0].inner[row]
+                vc.mainText = json![0].maintenance[row]
+
             default:
                 break
             }

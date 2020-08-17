@@ -123,6 +123,11 @@ class MainScreen: UITableViewController {
     
     // MARK: - IBActions
     
+    @IBAction func calculate(_ sender: UIBarButtonItem) {
+        performSegue(withIdentifier: "toPDF", sender: self)
+    }
+    
+    
     @IBAction func fireFoundChange(_ sender: UISwitch) {
         fireStatusLabel.text = fireplaceSwitch.isOn ? "Очаг - обнаружен" : "Очаг - поиск"
         showFireUI()
@@ -204,6 +209,22 @@ class MainScreen: UITableViewController {
 		}
 		return headerText
 	}
+    
+    
+     // MARK: - Segue
+	
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toPDF" {
+            guard let vc = segue.destination as? PDFPreviewScreen else { return }
+            let pdfCreator = PDFCreator()
+			
+            if Parameters.shared.isFireFound {
+                vc.documentData = pdfCreator.foundPDFCreator()
+            } else {
+                vc.documentData = pdfCreator.notFoundPDFCreator()
+            }
+        }
+    }
     
 }
 
