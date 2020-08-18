@@ -12,8 +12,6 @@ class InfoServiceScreen: UITableViewController {
     
     let json = parse(pathForFile: Bundle.main.path(forResource: "infoData", ofType: "json")!)
     
-	// MARK: - Lifecycle
-	
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,8 +24,6 @@ class InfoServiceScreen: UITableViewController {
     }
     
     
-	// MARK: - Segue
-	
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "serviceToDiplay" {
             guard let vc = segue.destination as? InfoDisplayText else { return }
@@ -43,5 +39,4 @@ class InfoServiceScreen: UITableViewController {
             }
         }
     }
-	
 }

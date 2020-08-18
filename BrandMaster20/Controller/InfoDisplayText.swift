@@ -51,4 +51,5 @@ class InfoDisplayText: UIViewController {
 //		SettingsData.settings.saveSettings()
 	}
 	
+	
 }

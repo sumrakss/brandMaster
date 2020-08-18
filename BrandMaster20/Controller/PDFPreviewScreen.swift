@@ -13,15 +13,17 @@ class PDFPreviewScreen: UIViewController {
 
     // MARK: - IBOutlets
     
-	@IBOutlet weak var pdfView: PDFView!
 	@IBOutlet weak var shareButton: UIBarButtonItem!
-	
+    @IBOutlet weak var pdfView: PDFView!
+    
     
      // MARK: - Public Properties
     
     public var documentData: Data?
-	
-	
+//    var appData: Parameters?
+    
+    
+    
      // MARK: - Lifecycle
     
     override func viewDidLoad() {
@@ -46,10 +48,31 @@ class PDFPreviewScreen: UIViewController {
       // MARK: - Private Methods
     
     private func createPDF() {
-		if let data = documentData {
+        if let data = documentData {
           pdfView.document = PDFDocument(data: data)
           pdfView.autoScales = true
         }
     }
     
+	// Выход по звуковому сигналу
+//	func atencionMessage() {
+//		if SettingsData.airSignalMode {
+//			if SettingsData.airSignalFlag {
+//				SettingsData.airSignalFlag = false
+//			}
+//		}
+//	}
+//
+//
+//	@IBAction func shareAction(_ sender: UIBarButtonItem) {
+//        let pdfCreator = PDFCreator()
+//		var pdfData = Data()
+//		if  appData!.firePlace {
+//			pdfData = pdfCreator.foundPDFCreator(appData: appData!)
+//		} else {
+//			pdfData = pdfCreator.notFoundPDFCreator(appData: appData!)
+//		}
+//        let vc = UIActivityViewController(activityItems: [pdfData], applicationActivities: [])
+//        present(vc, animated: true, completion: nil)
+//	}
 }

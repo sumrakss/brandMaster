@@ -212,12 +212,14 @@ class MainScreen: UITableViewController {
     
     
      // MARK: - Segue
-	
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toPDF" {
             guard let vc = segue.destination as? PDFPreviewScreen else { return }
             let pdfCreator = PDFCreator()
-			
+//            vc.appData = Parameters.shared
+            
+            let data = Parameters.shared
+            
             if Parameters.shared.isFireFound {
                 vc.documentData = pdfCreator.foundPDFCreator()
             } else {
@@ -225,6 +227,7 @@ class MainScreen: UITableViewController {
             }
         }
     }
+    
     
 }
 

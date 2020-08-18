@@ -12,8 +12,6 @@ class InfoFunctionsScreen: UITableViewController {
     
     let json = parse(pathForFile: Bundle.main.path(forResource: "infoData", ofType: "json")!)
     
-	// MARK: - Lifecycle
-	
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -26,8 +24,6 @@ class InfoFunctionsScreen: UITableViewController {
     }
     
     
-	// MARK: - Segue
-	
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "functionsToDiplay" {
             guard let vc = segue.destination as? InfoDisplayText else { return }
@@ -36,7 +32,7 @@ class InfoFunctionsScreen: UITableViewController {
             
             switch section {
             case 0:
-				vc.mainText = json![0].service[row]
+                vc.mainText = json![0].service[row]
             case 1:
                 vc.mainText = json![0].functionals[row]
             case 2:
@@ -46,5 +42,4 @@ class InfoFunctionsScreen: UITableViewController {
             }
         }
     }
-	
 }

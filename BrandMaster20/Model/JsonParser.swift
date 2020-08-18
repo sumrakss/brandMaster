@@ -8,11 +8,11 @@
 
 import Foundation
 
-// MARK: - Структура json
 
 struct Answer: Codable {
     var info: [Info]
 }
+
 
 struct Info: Codable {
     let service: [String]
@@ -22,7 +22,6 @@ struct Info: Codable {
 }
 
 
-// MARK: - Обработка ошибок парсинга
 
 func parse(pathForFile: String) -> [Info]? {
     var d: Data?
@@ -45,5 +44,4 @@ func parse(pathForFile: String) -> [Info]? {
         print("Error... \(error.localizedDescription)")
         return nil
     }
-	
 }

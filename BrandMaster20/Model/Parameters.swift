@@ -3,15 +3,15 @@ import UIKit
 
 // Типы дыхательного аппарата
 enum DeviceType {
-	case air
-	case oxigen
+    case air
+    case oxigen
 }
 
 
 // Единицы измерения расчетов
 enum MeasureType {
-	case kgc
-	case mpa
+    case kgc
+    case mpa
 }
 
 
@@ -86,57 +86,57 @@ struct Parameters {
 
     // MARK: - Pickerview
     
-	var pickerComponents = [String]()    // Содержимое pickerview
+    var pickerComponents = [String]()    // Содержимое pickerview
 
-	mutating func generatePickerData() {
-		var value = 300.0
-		switch Parameters.shared.measureType {
-			case .kgc:
-				while value >= 100 {
-					pickerComponents.append(String(Int(value)))
-					value -= 5
-				}
-			case .mpa:
-				value = 30
-				while value >= 10 {
-					
-					pickerComponents.append(String(value))
-					value -= 0.5
-				}
-		}
-	}
+    mutating func generatePickerData() {
+        var value = 300.0
+        switch Parameters.shared.measureType {
+            case .kgc:
+                while value >= 100 {
+                    pickerComponents.append(String(Int(value)))
+                    value -= 5
+                }
+            case .mpa:
+                value = 30
+                while value >= 10 {
+                    
+                    pickerComponents.append(String(value))
+                    value -= 0.5
+                }
+        }
+    }
 
-	
-	// Сохраняем значение давления
-	func setPressureData(for enterArray: [Double], for fireArray: [Double]) {
-		Parameters.shared.enterPressureData.removeAll()
-		Parameters.shared.firePressureData.removeAll()
-		Parameters.shared.fallPressureData.removeAll()
-		
-		Parameters.shared.enterPressureData = enterArray
-		Parameters.shared.firePressureData = fireArray
-		for item in 0..<enterArray.count {
-			Parameters.shared.fallPressureData.append(Parameters.shared.enterPressureData[item] - Parameters.shared.firePressureData[item])
-		}
-	}
     
-	
+    // Сохраняем значение давления
+    func setPressureData(for enterArray: [Double], for fireArray: [Double]) {
+        Parameters.shared.enterPressureData.removeAll()
+        Parameters.shared.firePressureData.removeAll()
+        Parameters.shared.fallPressureData.removeAll()
+        
+        Parameters.shared.enterPressureData = enterArray
+        Parameters.shared.firePressureData = fireArray
+        for item in 0..<enterArray.count {
+            Parameters.shared.fallPressureData.append(Parameters.shared.enterPressureData[item] - Parameters.shared.firePressureData[item])
+        }
+    }
+    
+    
     func setDeviceType(device: DeviceType ) {
-		switch device {
-			case .air:
-				Parameters.shared.deviceType = .air
-			case .oxigen:
-				Parameters.shared.deviceType = .oxigen
-		}
-	}
-	
-	func setMeasureType(measure: MeasureType ) {
-		switch measure {
-			case .kgc:
-				Parameters.shared.measureType = .kgc
-			case .mpa:
-				Parameters.shared.measureType = .mpa
-		}
-	}
-	
+        switch device {
+            case .air:
+                Parameters.shared.deviceType = .air
+            case .oxigen:
+                Parameters.shared.deviceType = .oxigen
+        }
+    }
+    
+    func setMeasureType(measure: MeasureType ) {
+        switch measure {
+            case .kgc:
+                Parameters.shared.measureType = .kgc
+            case .mpa:
+                Parameters.shared.measureType = .mpa
+        }
+    }
+    
 }
