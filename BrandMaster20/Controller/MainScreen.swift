@@ -3,26 +3,6 @@
 //  BrandMaster20
 //
 
-/*
-func saveSettings() {
-       print("param")
-       if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: param, requiringSecureCoding: false) {
-           defaults.set(savedData, forKey: key)
-       }
-       
-       guard let savedData = defaults.object(forKey: key) as? Data,
-           let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? Parameters else { return }
-       
-       
-   }
-   
-   func loadSettings() -> Parameters {
-      guard let savedData = defaults.object(forKey: key) as? Data,
-       let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? Parameters else { return Parameters }
-       return decodedModel
-   }
-*/
-
 //  Created by Алексей on 27.07.2020.
 //  Copyright © 2020 Alexey Orekhov. All rights reserved.
 //
@@ -62,13 +42,22 @@ class MainScreen: UITableViewController {
     @IBOutlet var fireDataTextFields: [UITextField]!
     
     
+    // MARK: - Private Properties
+    var teamSize: Int {
+        return Int(teamSizeStepper!.value)
+    }
+    
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         setupStartScreen()
-        setTeam(size: Int(teamSizeStepper!.value))
+        setTeam(size: teamSize)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        writePressureData(teamSize)
     }
     
     
@@ -107,9 +96,14 @@ class MainScreen: UITableViewController {
         for i in 0..<(size) {
             firemanData[i].isHidden = false
         }
-        // Данные из TF записываем в Parameters
+        writePressureData(size)
+    }
+    
+    //  Сохраняем значения полей ввода
+    private func writePressureData(_ size: Int) {
         var enterArray = [Double]()
         var fireArray = [Double]()
+        
         for i in 0..<(size) {
             if let enterData = startDataTextFields?[i].text,
                 let fireData = fireDataTextFields?[i].text {
@@ -117,9 +111,9 @@ class MainScreen: UITableViewController {
                 fireArray.append(Double(fireData)!)
             }
         }
-        Parameters.shared.setPressureData(for: enterArray, for: fireArray)  //
+        Parameters.shared.setPressureData(for: enterArray, for: fireArray)
     }
-    
+
     
     private func showFireUI() {
         fireTimeCellHidden = !fireTimeCellHidden
