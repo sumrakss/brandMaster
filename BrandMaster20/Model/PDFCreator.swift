@@ -9,7 +9,7 @@
 import UIKit
 import PDFKit
 
-class PDFCreator: NSObject {
+final class PDFCreator: NSObject {
     
     // MARK: - Private Properties
     

@@ -2,6 +2,27 @@
 //  MainScreen.swift
 //  BrandMaster20
 //
+
+/*
+func saveSettings() {
+       print("param")
+       if let savedData = try? NSKeyedArchiver.archivedData(withRootObject: param, requiringSecureCoding: false) {
+           defaults.set(savedData, forKey: key)
+       }
+       
+       guard let savedData = defaults.object(forKey: key) as? Data,
+           let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? Parameters else { return }
+       
+       
+   }
+   
+   func loadSettings() -> Parameters {
+      guard let savedData = defaults.object(forKey: key) as? Data,
+       let decodedModel = try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(savedData) as? Parameters else { return Parameters }
+       return decodedModel
+   }
+*/
+
 //  Created by Алексей on 27.07.2020.
 //  Copyright © 2020 Alexey Orekhov. All rights reserved.
 //
@@ -45,7 +66,6 @@ class MainScreen: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         
         setupStartScreen()
         setTeam(size: Int(teamSizeStepper!.value))
@@ -216,10 +236,7 @@ class MainScreen: UITableViewController {
         if segue.identifier == "toPDF" {
             guard let vc = segue.destination as? PDFPreviewScreen else { return }
             let pdfCreator = PDFCreator()
-//            vc.appData = Parameters.shared
-            
-            let data = Parameters.shared
-            
+
             if Parameters.shared.isFireFound {
                 vc.documentData = pdfCreator.foundPDFCreator()
             } else {

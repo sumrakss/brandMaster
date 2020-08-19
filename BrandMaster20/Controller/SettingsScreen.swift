@@ -125,6 +125,8 @@ class SettingsScreen: UITableViewController {
 	
 	@IBAction func resetSettings(_ sender: UIButton) {
 		//        userDefaults.setValue(Parameters.shared, forKeyPath: "sharedSettings")
+        let settings = UserSettings()
+        settings.saveSettings()
 	}
 	
 	

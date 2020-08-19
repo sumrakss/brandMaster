@@ -84,6 +84,7 @@ struct Parameters {
     }
     
 
+    
     // MARK: - Pickerview
     
     var pickerComponents = [String]()    // Содержимое pickerview

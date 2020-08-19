@@ -1,6 +1,6 @@
 import Foundation
 
-class Calculations {
+final class Calculations {
 	
 	// MARK: - Псевдонимы
 	
