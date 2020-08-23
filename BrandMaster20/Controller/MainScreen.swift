@@ -14,7 +14,7 @@ class MainScreen: UITableViewController {
     // MARK: - IBOutlets
     
     // Section 0
-    @IBOutlet weak var fireStatusLabel: UILabel!
+	@IBOutlet weak var fireStatusLabel: UILabel!
     @IBOutlet weak var workStatusLabel: UILabel!
     
     @IBOutlet weak var startTimeLabel: UILabel!
@@ -43,38 +43,51 @@ class MainScreen: UITableViewController {
     
     
     // MARK: - Private Properties
-    var teamSize: Int {
+    private var teamSize: Int {
         return Int(teamSizeStepper!.value)
     }
     
+	
     // MARK: - Lifecycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         setupStartScreen()
         setTeam(size: teamSize)
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        writePressureData(teamSize)
-    }
+//    override func viewDidAppear(_ animated: Bool) {
+//        writePressureData(teamSize)
+//    }
+	
+	override func viewDidDisappear(_ animated: Bool) {
+		writePressureData(teamSize)
+	}
     
     
     // MARK: - Private Methods
     
     private func setupStartScreen() {
+		
+		
         navigationController?.navigationBar.prefersLargeTitles = true
         navigationItem.title = "Условия работы"
         
-        fireStatusLabel.text = "Очаг - обнаружен"
-        workStatusLabel.text = "Условия - нормальные"
-        
-        fireplaceSwitch.isOn = true
-        workConditionSwitch.isOn = false
+		print(Parameters.settings.loadSettings())
+		
+		fireplaceSwitch.isOn = Parameters.shared.isFireFound
+		workConditionSwitch.isOn = Parameters.shared.isHardWork
+		
+		fireStatusLabel.text = fireplaceSwitch.isOn ? "Очаг - обнаружен" : "Очаг - поиск"
+		workStatusLabel.text = workConditionSwitch.isOn ? "Условия - сложные" : "Условия - нормальные"
         
         setTime(for: startTimeLabel, from: startTimePicker)
         setTime(for: fireTimeLabel, from: fireTimePicker)
+		
+		for i in 0..<teamSize {
+			startDataTextFields[i].text = String(Int(Parameters.shared.enterPressureData[i]))
+			fireDataTextFields[i].text = String(Int(Parameters.shared.firePressureData[i]))
+		}
         
         tableView.keyboardDismissMode = .onDrag
     }
@@ -138,6 +151,7 @@ class MainScreen: UITableViewController {
     // MARK: - IBActions
     
     @IBAction func calculate(_ sender: UIBarButtonItem) {
+		writePressureData(teamSize)
         performSegue(withIdentifier: "toPDF", sender: self)
     }
     

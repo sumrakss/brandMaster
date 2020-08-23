@@ -21,7 +21,7 @@ struct Parameters {
     
     private init() {}
     
-    
+	
     // MARK: - Условия работы
     
     // Очаг найден
@@ -33,15 +33,15 @@ struct Parameters {
     // Время у очага
     var fireTime = Date()
     // Давление при включении
-    var enterPressureData = [Double]()
+	var enterPressureData = [300.0, 300.0, 300.0]
     // Давление у очага
-    var firePressureData = [Double]()
+	var firePressureData = [250.0, 250.0, 250.0]
     // Падение давления в звене
     var fallPressureData = [Double]()
     
     
     // MARK: - Настройки приложения
-    
+	static var settings = UserSettings()
     //  Тип СИЗОД. По-умолчанию ДАСВ
     var deviceType = DeviceType.air
     // Единицы измерения.

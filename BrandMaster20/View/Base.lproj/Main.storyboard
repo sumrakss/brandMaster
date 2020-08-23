@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pxw-7R-TLm">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pxw-7R-TLm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -260,7 +260,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="30w-G3-hWA">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="30w-G3-hWA">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="mI3-Wy-k44"/>
@@ -289,7 +289,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Toc-ln-xyM">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="Toc-ln-xyM">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="5GO-Ta-STK"/>
@@ -318,7 +318,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="IyN-km-1Rm">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="IyN-km-1Rm">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="height" constant="34" id="s62-1V-PfN"/>
@@ -347,7 +347,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-Ip-MWC">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="MWr-Ip-MWC">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="72" id="4mu-1l-DsA"/>
@@ -376,7 +376,7 @@
                                                                     <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="20"/>
                                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                                                 </textField>
-                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="300" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="91r-PM-TNm">
+                                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="250" borderStyle="roundedRect" textAlignment="center" adjustsFontSizeToFit="NO" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="91r-PM-TNm">
                                                                     <rect key="frame" x="110" y="0.0" width="72" height="34"/>
                                                                     <constraints>
                                                                         <constraint firstAttribute="width" constant="72" id="asf-nN-wdV"/>
@@ -1863,15 +1863,10 @@
                         <viewLayoutGuide key="safeArea" id="cEP-P8-6s9"/>
                     </view>
                     <navigationItem key="navigationItem" id="dbD-hM-0ih">
-                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="UsA-Sc-LXn">
-                            <connections>
-                                <action selector="shareAction:" destination="pcY-TC-KGM" id="mgl-Ld-CFh"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="UsA-Sc-LXn"/>
                     </navigationItem>
                     <connections>
                         <outlet property="pdfView" destination="hn5-2U-qiz" id="ov3-sA-MBF"/>
-                        <outlet property="shareButton" destination="UsA-Sc-LXn" id="j97-lH-DPk"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SGY-98-qma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1880,6 +1875,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ksu-1W-fBR"/>
+        <segue reference="rEN-d3-2F4"/>
     </inferredMetricsTieBreakers>
 </document>

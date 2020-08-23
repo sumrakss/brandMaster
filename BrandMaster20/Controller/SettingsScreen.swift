@@ -47,6 +47,8 @@ class SettingsScreen: UITableViewController {
 		updateSettingsScreen()
 	}
 	
+//	let parameter = Parameters.shared
+	
 	
 	// MARK: - Private Methods
 	
@@ -56,9 +58,14 @@ class SettingsScreen: UITableViewController {
 		
 		tableView.keyboardDismissMode = .onDrag
 		
-		accuracySwitch.isOn = false
-		signalSwitch.isOn = true
-		showSimpleSwitch.isOn = true
+		accuracySwitch.isOn = Parameters.shared.accuracyMode
+		signalSwitch.isOn = Parameters.shared.airSignalMode
+		showSimpleSwitch.isOn = Parameters.shared.showSimpleSolution
+		
+		airVolumeTextField.text = String(Parameters.shared.airVolume)
+		airRateTextField.text = String(Parameters.shared.airRate)
+		airIndexTextField.text = String(Parameters.shared.airIndex)
+		airSignalTextField.text = String(Parameters.shared.airSignal)
 	}
 	
 	private func updateSettingsScreen() {
@@ -94,6 +101,7 @@ class SettingsScreen: UITableViewController {
 	
 	@IBAction func airSignalModeChange(_ sender: UISwitch) {
 		Parameters.shared.airSignalMode = signalSwitch.isOn
+		print(signalSwitch.isOn)
 	}
 	
 	@IBAction func simpleSolutionModeChange(_ sender: UISwitch) {
@@ -120,13 +128,8 @@ class SettingsScreen: UITableViewController {
 		Parameters.shared.airSignal = guardText(field: sender)
 	}
 	
-	
-	let userDefaults = UserDefaults.standard
-	
 	@IBAction func resetSettings(_ sender: UIButton) {
-		//        userDefaults.setValue(Parameters.shared, forKeyPath: "sharedSettings")
-        let settings = UserSettings()
-        settings.saveSettings()
+		Parameters.settings.saveSettings()
 	}
 	
 	
